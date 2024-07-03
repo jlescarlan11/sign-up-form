@@ -98,7 +98,6 @@ img {
 
 input {
   padding: 0.3em;
-  min-width: 20rem;
   flex: 1;
   border: 1px solid rgba(34, 40, 49, 0.3);
   padding-left: 1rem;
