@@ -155,3 +155,7 @@ a {
 .container > p {
   font-size: calc(1rem + 0.5vw);
 }
+
+.container.login {
+  padding-top: 0;
+}
