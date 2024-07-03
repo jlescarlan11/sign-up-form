@@ -48,14 +48,18 @@ body {
 h2 {
   font-size: calc(1rem + 0.5vw);
 }
+/* 
+h1 {
+  font-size: calc(1rem + 0.5vw);
+} */
 
 .background-container .logo-container {
   position: absolute;
-  top: 10rem;
+  top: clamp(2rem, calc(2rem + 10vh), 10rem);
 
   background-color: rgba(34, 40, 49, 0.7);
   width: 100%;
-  padding: 1rem;
+  padding: calc(0.2rem + 0.1vh);
 
   display: flex;
   align-items: center;
@@ -70,15 +74,15 @@ h2 {
   flex: 0 0 auto;
   min-width: 40ch;
 
-  padding: 20px 50px;
+  padding: 20px 30px;
 }
 
 img {
-  width: calc(1.6rem + 5vw);
+  width: clamp(3rem, 2vw, 7.5rem);
 }
 
 .background-container h1 {
-  font-size: clamp(3rem, 5vw, 7.5rem);
+  font-size: clamp(3rem, 2vw, 7.5rem);
   margin-left: 1rem;
 }
 
@@ -86,14 +90,15 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 1rem;
+  padding: calc(0.5rem + 0.1vh);
   text-align: center;
+  font-size: clamp(0rem, 2vw, 1rem);
   background-color: rgba(34, 40, 49, 0.7);
 }
 
 input {
   padding: 0.3em;
-  min-width: 30rem;
+  min-width: 20rem;
   flex: 1;
   border: 1px solid rgba(34, 40, 49, 0.3);
   padding-left: 1rem;
