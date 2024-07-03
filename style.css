@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+#signup {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.background-container {
+  background-image: url("assets/background.svg");
+  flex-basis: 40%;
+  position: relative;
+  flex-grow: 1;
+  color: rgb(238, 238, 238);
+
+  min-height: calc(10vh + 30vw);
+}
+
+.signup-container {
+  flex-basis: 60%;
+  max-width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+
+  color: rgb(34, 40, 49);
+}
+
+h2 {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.background-container .logo-container {
+  position: absolute;
+  top: 10rem;
+
+  background-color: rgba(34, 40, 49, 0.7);
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container {
+  background-color: rgba(57, 62, 70, 0.1);
+}
+
+.container {
+  flex: 0 0 auto;
+  min-width: 40ch;
+
+  padding: 20px 50px;
+}
+
+img {
+  width: calc(1.6rem + 5vw);
+}
+
+.background-container h1 {
+  font-size: clamp(3rem, 5vw, 7.5rem);
+  margin-left: 1rem;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(34, 40, 49, 0.7);
+}
+
+input {
+  padding: 0.3em;
+  min-width: 30rem;
+  flex: 1;
+  border: 1px solid rgba(34, 40, 49, 0.3);
+  padding-left: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.form-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  column-gap: 10rem;
+}
+
+.form-container > h1 {
+  width: 100%;
+}
+
+.form-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(255, 211, 105);
+  border: 1px solid rgba(34, 40, 49, 0.3);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+input:not(:placeholder-shown):invalid {
+  outline: none;
+  border: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(34, 40, 49);
+}
+
+.container > p {
+  font-size: calc(1rem + 0.5vw);
+}
+
+#password-minlength {
+  margin-left: 1rem;
+}
+
+span {
+  color: red;
+}

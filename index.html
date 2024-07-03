@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <section id="signup">
+      <div class="background-container">
+        <header class="logo-container">
+          <img src="assets/logo.svg" alt="logo" />
+          <h1>Sutta</h1>
+        </header>
+        <footer class="footer-container">Made by John Lester Escarlan</footer>
+      </div>
+      <div class="signup-container">
+        <div>
+          <div class="container">
+            <h2>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </h2>
+            <h2>Sign up now to get started.</h2>
+            <br />
+            <h2>You <em>know</em> you want to.</h2>
+          </div>
+        </div>
+
+        <form action="GET">
+          <div class="section-container">
+            <div class="container">
+              <div class="form-container">
+                <h1>Let's do this!</h1>
+                <div class="input">
+                  <label for="fname"> FIRST NAME </label>
+                  <input
+                    required
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="karli"
+                  />
+                </div>
+                <div class="input">
+                  <label for="lname"> LAST NAME </label>
+                  <input
+                    required
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="ann"
+                  />
+                </div>
+                <div class="input">
+                  <label for="email"> EMAIL </label>
+                  <input
+                    required
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ka@email.com"
+                  />
+                </div>
+                <div class="input">
+                  <label for="pnumber"> PHONE NUMBER </label>
+                  <input
+                    required
+                    type="tel"
+                    id="pnumber"
+                    name="pnumber"
+                    pattern="[\+]\d{12}"
+                    placeholder="+639******123"
+                  />
+                </div>
+                <div class="input">
+                  <label for="pwd"> PASSWORD </label>
+                  <input
+                    required
+                    type="password"
+                    id="pwd"
+                    name="pwd"
+                    placeholder="password"
+                    aria-describedby="password-minlength"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                  <div id="password-minlength">
+                    Password should be eight or more characters, and includes
+                    uppercase, lowercase, and a number. <span>*</span>
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="cpwd"> CONFIRM PASSWORD </label>
+                  <input
+                    required
+                    type="password"
+                    id="cpwd"
+                    name="cpwd"
+                    placeholder="confirm password"
+                    aria-describedby="password-minlength"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                  <div id="password-minlength">
+                    Password should be eight or more characters, and includes
+                    uppercase, lowercase, and a number. <span>*</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <button class="form-button" type="submit">Create Account</button>
+          </div>
+          <div class="container">
+            <p>
+              Already have an account? <b><a href="#">Log in</a></b>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
