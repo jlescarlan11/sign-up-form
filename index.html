@@ -42,6 +42,7 @@
                     name="fname"
                     placeholder="karli"
                     pattern="[a-zA-Z]{1,20}$"
+                    title="Enter atleast three upto twenty characters"
                   />
                 </div>
                 <div class="input">
@@ -53,6 +54,7 @@
                     name="lname"
                     placeholder="ann"
                     pattern="[a-zA-Z]{1,20}$"
+                    title="Enter atleast three upto twenty characters"
                   />
                 </div>
                 <div class="input">
@@ -84,13 +86,10 @@
                     id="pwd"
                     name="pwd"
                     placeholder="password"
-                    aria-describedby="password-minlength"
                     pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    title="Password should be eight or more characters, and includes
+                    uppercase, lowercase, and a number."
                   />
-                  <div id="password-minlength">
-                    Password should be eight or more characters, and includes
-                    uppercase, lowercase, and a number. <span>*</span>
-                  </div>
                 </div>
                 <div class="input">
                   <label for="cpwd"> CONFIRM PASSWORD </label>
@@ -102,11 +101,9 @@
                     placeholder="confirm password"
                     aria-describedby="password-minlength"
                     pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    title="Password should be eight or more characters, and includes
+                    uppercase, lowercase, and a number."
                   />
-                  <div id="password-minlength">
-                    Password should be eight or more characters, and includes
-                    uppercase, lowercase, and a number. <span>*</span>
-                  </div>
                 </div>
               </div>
             </div>

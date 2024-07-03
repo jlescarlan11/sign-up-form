@@ -151,11 +151,3 @@ a {
 .container > p {
   font-size: calc(1rem + 0.5vw);
 }
-
-#password-minlength {
-  margin-left: 1rem;
-}
-
-span {
-  color: red;
-}
